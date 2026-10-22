@@ -21,7 +21,7 @@ P = 2 * (b + c)
 print("Ristküliku ümbermõõt", P)
 di = math.sqrt(b ** 2 + c ** 2)
 print("Ristküliku diagonaal", round(di, 2))
-print()
+
 
 print("Ringi karakteristikud")
 r = float(input("Sisesta ringi raadiuse pikkus => "))
