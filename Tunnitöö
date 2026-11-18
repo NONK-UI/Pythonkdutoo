@@ -81,4 +81,30 @@ except ValueError:
     print("Viga: sisestada tohib ainult arve!")
 
 
+ul10 
+tehed = ["+", "-", "*", "/"]
+
+try:
+    arv1 = float(input("Sisesta esimene arv: "))
+    arv2 = float(input("Sisesta teine arv: "))
+    tehe = input("Millist tehet soovid (+, -, *, /)? ")
+
+    if tehe not in tehed:
+        print("Viga: Tundmatu tehtemärk!")
+    elif tehe == "+":
+        print(f"{arv1} {tehe} {arv2} = {arv1 + arv2}")
+    elif tehe == "-":
+        print(f"{arv1} {tehe} {arv2} = {arv1 - arv2}")
+    elif tehe == "*":
+        print(f"{arv1} {tehe} {arv2} = {arv1 * arv2}")
+    elif tehe == "/":
+        print(f"{arv1} {tehe} {arv2} = {arv1 / arv2}")
+
+except ValueError:
+    print("Viga: Palun sisesta korrektsed arvud!")
+except ZeroDivisionError:
+    print("Viga: Nulliga jagamine ei ole lubatud!")
+
+
+
  
