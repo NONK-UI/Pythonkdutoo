@@ -1,0 +1,39 @@
+meeslühike = 150
+meeskeskmine = 165
+meespikk = 185
+
+nainelühike = 130
+nainekeskmine = 160
+nainepikk = 175
+
+pikkus = input("Sissesta pikkus cm-s: ")
+sugu = input("sugu: ")
+
+
+if sugu.isalpha():
+    if sugu.lower()=="m" or sugu.upper()=="MEES":
+        print("Mehe pikkuse analüüs")
+        if pikkus.isdigit(): 
+            pikus = int(pikkus)
+            if pikus <= meeslühike and not pikus == meeskeskmine:
+                print("Meeste pikkuse standardite järgi oled sa väike.")
+            elif pikus >= meeskeskmine and not pikus == meespikk:
+                print("Meeste pikkuse standardite järgi oled sa keskmine.")
+            elif pikus >= meespikk: 
+                 print("Meeste pikkuse standardite järgi oled sa pikk.")
+
+    else: 
+        print("Naise Pikkuse analüüs")
+        if pikkus.isdigit(): 
+            pikus = int(pikkus)
+            if pikus <= nainelühike and not pikus == nainekeskmine:
+                print("Naiste pikkuse standardite järgi oled sa väike.")
+            elif pikus >= nainekeskmine and not pikus == nainepikk:
+                print("Naiste pikkuse standardite järgi oled sa keskmine.")
+            elif pikus >= nainepikk: 
+                 print("Naiste pikkuse standardite järgi oled sa pikk.")
+
+else: 
+    print("Viga")
+
+ 
