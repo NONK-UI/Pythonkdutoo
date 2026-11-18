@@ -36,4 +36,30 @@ if sugu.isalpha():
 else: 
     print("Viga")
 
+
+
+ül 8
+from random import *
+summa=0
+arve="Toode  Kogus  Hind  Kokku\n"
+valik=input("Kas soovid osta piima? (jah/ei)")
+if valik.lower()=="jah":
+    kogus=input("Mitu piima soovid osta(int): ")
+    if kogus.isdigit():
+        kogus=int(kogus)
+        p_hind=round(uniform(0.5,3.6),2)
+        print(f"Piima hind on {p_hind}£")
+        summa+=round(kogus*p_hind,2)
+        print(f"Piima kogusumm on {summa}£")
+        arve+=f"piim  {kogus}  {p_hind}£  {round(kogus*p_hind,2)}£\n"
+       
+    else: 
+        print("Viga")
+else: 
+    print("Selge, piima ei taha")
+
+print("Arve Nr. 12335234123")
+print(arve)
+
+
  
