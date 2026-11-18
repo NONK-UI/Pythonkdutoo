@@ -61,5 +61,24 @@ else:
 print("Arve Nr. 12335234123")
 print(arve)
 
+гд 9 
+
+try:
+    a = float(input("Sisesta esimese külje pikkus (a): "))
+    b = float(input("Sisesta teise külje pikkus (b): "))
+    c = float(input("Sisesta kolmanda külje pikkus (c): "))
+    d = float(input("Sisesta neljanda külje pikkus (d): "))
+
+    if a <= 0 or b <= 0 or c <= 0 or d <= 0:
+        print("Viga: kõik küljepikkused peavad olema positiivsed arvud!")
+    else:
+        if a == b == c == d:
+            print("Tegemist saab olla ruuduga (kõik küljed on võrdsed).")
+        else:
+            print("Tegemist ei saa olla ruuduga (küljed ei ole võrdsed).")
+
+except ValueError:
+    print("Viga: sisestada tohib ainult arve!")
+
 
  
